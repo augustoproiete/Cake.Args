@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D13A6EB5-6903-49FF-B476-17F2EA5DBB88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Args", "src\Cake.Args\Cake.Args.csproj", "{F8638ADF-F89D-483E-BAB7-A55D681CD37C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{60B737D5-5CA5-4846-A70C-0671A66AB49B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Args.Tests", "test\Cake.Args.Tests\Cake.Args.Tests.csproj", "{FB99D387-DAC9-4882-B3FE-41C3536004EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asset", "asset", "{08BEEE09-1E6D-4AA2-815D-5919DCAFCA26}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattrbutes = .gitattrbutes
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		build.cake = build.cake
+		build.cmd = build.cmd
+		build.ps1 = build.ps1
+		build.sh = build.sh
+		cake.config = cake.config
+		CHANGES.md = CHANGES.md
+		CODEOWNERS = CODEOWNERS
+		Directory.Build.props = Directory.Build.props
+		global.json = global.json
+		LICENSE = LICENSE
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8638ADF-F89D-483E-BAB7-A55D681CD37C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8638ADF-F89D-483E-BAB7-A55D681CD37C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8638ADF-F89D-483E-BAB7-A55D681CD37C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8638ADF-F89D-483E-BAB7-A55D681CD37C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB99D387-DAC9-4882-B3FE-41C3536004EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB99D387-DAC9-4882-B3FE-41C3536004EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB99D387-DAC9-4882-B3FE-41C3536004EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB99D387-DAC9-4882-B3FE-41C3536004EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F8638ADF-F89D-483E-BAB7-A55D681CD37C} = {D13A6EB5-6903-49FF-B476-17F2EA5DBB88}
+		{FB99D387-DAC9-4882-B3FE-41C3536004EB} = {60B737D5-5CA5-4846-A70C-0671A66AB49B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6C55449-DC9A-43CA-8B43-EA45160E4DEE}
+	EndGlobalSection
+EndGlobal
