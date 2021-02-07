@@ -1,3 +1,4 @@
+using System;
 using Cake.Core;
 using FluentAssertions;
 using Moq;
@@ -21,7 +22,7 @@ namespace Cake.Args.Tests
         [Fact]
         public void ArgumentOrDefault_of_string_returns_value_when_arg_is_present()
         {
-            _cakeArgumentsMock.Setup(x => x.GetArgument("configuration")).Returns("Release");
+            _cakeArgumentsMock.Setup(x => x.GetArguments("configuration")).Returns(new [] { "Release" });
 
             var context = _cakeContextMock.Object;
             var value = context.ArgumentOrDefault<string>("configuration");
@@ -32,7 +33,7 @@ namespace Cake.Args.Tests
         [Fact]
         public void ArgumentOrDefault_of_int_returns_value_when_arg_is_present()
         {
-            _cakeArgumentsMock.Setup(x => x.GetArgument("number")).Returns("42");
+            _cakeArgumentsMock.Setup(x => x.GetArguments("number")).Returns(new [] { "42" });
 
             var context = _cakeContextMock.Object;
             var value = context.ArgumentOrDefault<int>("number");
@@ -43,7 +44,7 @@ namespace Cake.Args.Tests
         [Fact]
         public void ArgumentOrDefault_of_bool_returns_value_when_arg_is_present()
         {
-            _cakeArgumentsMock.Setup(x => x.GetArgument("publish")).Returns("true");
+            _cakeArgumentsMock.Setup(x => x.GetArguments("publish")).Returns(new [] { "true" });
 
             var context = _cakeContextMock.Object;
             var value = context.ArgumentOrDefault<bool>("publish");
@@ -54,7 +55,7 @@ namespace Cake.Args.Tests
         [Fact]
         public void ArgumentOrDefault_of_nullable_int_returns_value_when_arg_is_present()
         {
-            _cakeArgumentsMock.Setup(x => x.GetArgument("number")).Returns("42");
+            _cakeArgumentsMock.Setup(x => x.GetArguments("number")).Returns(new [] { "42" });
 
             var context = _cakeContextMock.Object;
             var value = context.ArgumentOrDefault<int?>("number");
@@ -65,7 +66,7 @@ namespace Cake.Args.Tests
         [Fact]
         public void ArgumentOrDefault_of_string_returns_null_when_arg_is_missing()
         {
-            _cakeArgumentsMock.Setup(x => x.GetArgument("configuration")).Returns((string) null);
+            _cakeArgumentsMock.Setup(x => x.GetArguments("configuration")).Returns(Array.Empty<string>());
 
             var context = _cakeContextMock.Object;
             var value = context.ArgumentOrDefault<string>("configuration");
@@ -76,7 +77,7 @@ namespace Cake.Args.Tests
         [Fact]
         public void ArgumentOrDefault_of_int_returns_zero_when_arg_is_missing()
         {
-            _cakeArgumentsMock.Setup(x => x.GetArgument("number")).Returns((string) null);
+            _cakeArgumentsMock.Setup(x => x.GetArguments("number")).Returns(Array.Empty<string>());
 
             var context = _cakeContextMock.Object;
             var value = context.ArgumentOrDefault<int>("number");
@@ -87,7 +88,7 @@ namespace Cake.Args.Tests
         [Fact]
         public void ArgumentOrDefault_of_bool_returns_false_when_arg_is_missing()
         {
-            _cakeArgumentsMock.Setup(x => x.GetArgument("publish")).Returns((string) null);
+            _cakeArgumentsMock.Setup(x => x.GetArguments("publish")).Returns(Array.Empty<string>());
 
             var context = _cakeContextMock.Object;
             var value = context.ArgumentOrDefault<bool>("publish");
@@ -98,7 +99,7 @@ namespace Cake.Args.Tests
         [Fact]
         public void ArgumentOrDefault_of_nullable_int_returns_null_when_arg_is_missing()
         {
-            _cakeArgumentsMock.Setup(x => x.GetArgument("number")).Returns((string) null);
+            _cakeArgumentsMock.Setup(x => x.GetArguments("number")).Returns(Array.Empty<string>());
 
             var context = _cakeContextMock.Object;
             var value = context.ArgumentOrDefault<int?>("number");
