@@ -28,12 +28,12 @@
     <Version>0.0.1-local</Version>
     <Authors>C. Augusto Proiete &amp; Contributors</Authors>
     <Company>augustoproiete.net</Company>
-    <Description>Cake add-in that adds Arguments extensions in Cake build scripts.</Description>
+    <Description>Cake addin that provides additional Arguments extensions in Cake build scripts.</Description>
     <Copyright>Copyright 2021 C. Augusto Proiete &amp; Contributors - Provided under the MIT License</Copyright>
-    <PackageTags>cake;args;exceldna;addin;cake-addin;cake-build;augustoproiete</PackageTags>
+    <PackageTags>cake;args;cake-addin;cake-build;addin;script;build;augustoproiete</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>images\icon.png</PackageIcon>
-    <PackageIconUrl>https://raw.githubusercontent.com/augustoproiete/Cake.Args/master/assets/cake-args-nuget.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/augustoproiete/Cake.Args/master/asset/cake-args-nuget.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/augustoproiete/Cake.Args</PackageProjectUrl>
     <PackageReleaseNotes>https://github.com/augustoproiete/Cake.Args/releases</PackageReleaseNotes>
     <RepositoryType>git</RepositoryType>
