@@ -7,11 +7,8 @@ var buildVersion = MinVer(s => s.WithTagPrefix("v").WithDefaultPreReleasePhase("
 Task("clean")
     .Does(() =>
 {
-    CleanDirectory("./build/artifacts");
-    CleanDirectories("./src/**/bin");
-    CleanDirectories("./src/**/obj");
-    CleanDirectories("./test/**/bin");
-    CleanDirectories("./test/**/obj");
+    CleanDirectories("./artifacts/**");
+    CleanDirectories("./**/^{bin,obj}");
 });
 
 Task("restore")
