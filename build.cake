@@ -23,23 +23,11 @@ Task("restore")
 
 Task("build")
     .IsDependentOn("restore")
-    .Does(() =>
+    .DoesForEach(new[] { "Debug", "Release" }, (configuration) =>
 {
     DotNetCoreBuild("./Cake.Args.sln", new DotNetCoreBuildSettings
     {
-        Configuration = "Debug",
-        NoRestore = true,
-        NoIncremental = false,
-        ArgumentCustomization = args =>
-            args.AppendQuoted($"-p:Version={buildVersion.Version}")
-                .AppendQuoted($"-p:AssemblyVersion={buildVersion.FileVersion}")
-                .AppendQuoted($"-p:FileVersion={buildVersion.FileVersion}")
-                .AppendQuoted($"-p:ContinuousIntegrationBuild=true")
-    });
-
-    DotNetCoreBuild("./Cake.Args.sln", new DotNetCoreBuildSettings
-    {
-        Configuration = "Release",
+        Configuration = configuration,
         NoRestore = true,
         NoIncremental = false,
         ArgumentCustomization = args =>
