@@ -67,7 +67,7 @@ Task("pack")
         Configuration = "Release",
         NoRestore = true,
         NoBuild = true,
-        OutputDirectory = "./build/artifacts",
+        OutputDirectory = "./artifacts/nuget",
         ArgumentCustomization = args =>
             args.AppendQuoted($"-p:Version={buildVersion.Version}")
                 .AppendQuoted($"-p:PackageReleaseNotes={releaseNotes}")
@@ -98,7 +98,7 @@ Task("publish")
         ApiKey = apiKey,
     };
 
-    foreach (var nugetPackageFile in GetFiles("./build/artifacts/*.nupkg"))
+    foreach (var nugetPackageFile in GetFiles("./artifacts/nuget/*.nupkg"))
     {
         DotNetCoreNuGetPush(nugetPackageFile.FullPath, nugetPushSettings);
     }
