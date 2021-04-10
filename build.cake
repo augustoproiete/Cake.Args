@@ -30,11 +30,11 @@ Task("build")
         Configuration = configuration,
         NoRestore = true,
         NoIncremental = false,
-        ArgumentCustomization = args =>
-            args.AppendQuoted($"-p:Version={buildVersion.Version}")
-                .AppendQuoted($"-p:AssemblyVersion={buildVersion.FileVersion}")
-                .AppendQuoted($"-p:FileVersion={buildVersion.FileVersion}")
-                .AppendQuoted($"-p:ContinuousIntegrationBuild=true")
+        MSBuildSettings = new DotNetCoreMSBuildSettings()
+            .WithProperty("Version", buildVersion.Version)
+            .WithProperty("AssemblyVersion", buildVersion.AssemblyVersion)
+            .WithProperty("FileVersion", buildVersion.FileVersion)
+            .WithProperty("ContinuousIntegrationBuild", BuildSystem.IsLocalBuild ? "false" : "true")
     });
 });
 
@@ -68,13 +68,13 @@ Task("pack")
         NoRestore = true,
         NoBuild = true,
         OutputDirectory = "./artifacts/nuget",
-        ArgumentCustomization = args =>
-            args.AppendQuoted($"-p:Version={buildVersion.Version}")
-                .AppendQuoted($"-p:PackageReleaseNotes={releaseNotes}")
+        MSBuildSettings = new DotNetCoreMSBuildSettings()
+            .WithProperty("Version", buildVersion.Version)
+            .WithProperty("PackageReleaseNotes", releaseNotes)
     });
 });
 
-Task("publish")
+Task("push")
     .IsDependentOn("pack")
     .Does(context =>
 {
