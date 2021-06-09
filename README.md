@@ -1,7 +1,4 @@
 | README.md |
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 |:---|
 
 <div align="center">
@@ -88,10 +85,6 @@ For questions and to discuss ideas & feature requests, use the [GitHub discussio
 
 [![Join in the discussion on the Cake repository](https://img.shields.io/badge/GitHub-Discussions-green?logo=github)](https://github.com/cake-build/cake/discussions)
 
-## Release History
-
-Click on the [Releases](https://github.com/augustoproiete/Cake.Args/releases) tab on GitHub.
-
 ## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -109,9 +102,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+## Release History
+
+Click on the [Releases](https://github.com/augustoproiete/Cake.Args/releases) tab on GitHub.
 
 ---
 
