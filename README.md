@@ -12,7 +12,7 @@
 
 Cross-platform addin for the [Cake](https://cakebuild.net) build automation system that adds Arguments extensions in Cake build scripts. Cake.Args targets .NET 5.0, .NET Standard 2.0 and .NET Framework 4.6.1.
 
-[![NuGet Version](https://img.shields.io/nuget/v/Cake.Args.svg?color=blue&style=flat-square)](https://www.nuget.org/packages/Cake.Args/) [![Stack Overflow Cake Build](https://img.shields.io/badge/stack%20overflow-cakebuild-orange.svg?style=flat-square)](http://stackoverflow.com/questions/tagged/cakebuild)
+[![NuGet Version](https://img.shields.io/nuget/v/Cake.Args.svg?color=blue&style=flat-square)](https://www.nuget.org/packages/Cake.Args/) [![Stack Overflow Cake Build](https://img.shields.io/badge/stack%20overflow-cakebuild-orange.svg?style=flat-square)](http://stackoverflow.com/questions/tagged/cakebuild) [![All Contributors](https://img.shields.io/github/all-contributors/augustoproiete/Cake.Args.svg?color=orange&style=flat-square)](#contributors)
 
 </div>
 
@@ -88,6 +88,14 @@ For questions and to discuss ideas & feature requests, use the [GitHub discussio
 ## Release History
 
 Click on the [Releases](https://github.com/augustoproiete/Cake.Args/releases) tab on GitHub.
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ---
 
