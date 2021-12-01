@@ -25,7 +25,7 @@ If you like or are using this project please give it a star. Thanks!
 Simply add `Cake.Args` in your build script by using the [`addin`](http://cakebuild.net/docs/writing-builds/preprocessor-directives#add-in-directive) directive:
 
 ```csharp
-#addin "nuget:?package=Cake.Args&version=1.0.0"
+#addin "nuget:?package=Cake.Args&version=2.0.0"
 ```
 
 _Make sure the `&version=` attribute references the [latest version of Cake.Args](https://www.nuget.org/packages/Cake.Args/) compatible with the Cake runner that you are using. Check the [compatibility table](#compatibility) to see which version of Cake.Args to choose_.
@@ -33,7 +33,7 @@ _Make sure the `&version=` attribute references the [latest version of Cake.Args
 And you're ready to use the arguments extensions in your Cake build script:
 
 ```csharp
-#addin "nuget:?package=Cake.Args&version=1.0.0"
+#addin "nuget:?package=Cake.Args&version=2.0.0"
 
 var configuration =
     ArgumentOrDefault<string>("configuration") ??
@@ -75,7 +75,8 @@ Cake.Args is compatible with all [Cake runners](https://cakebuild.net/docs/runni
 
 | Cake runner     | Cake.Args       | Cake addin directive                              |
 |:---------------:|:---------------:| ------------------------------------------------- |
-| 1.0.0 or higher | 1.0.0 or higher | `#addin "nuget:?package=Cake.Args&version=1.0.0"` |
+| 2.0.0 or higher | 2.0.0 or higher | `#addin "nuget:?package=Cake.Args&version=2.0.0"` |
+| 1.0.0 - 1.3.0   | 1.0.0 - 1.0.1   | `#addin "nuget:?package=Cake.Args&version=1.0.1"` |
 | 0.33.0 - 0.38.5 | 0.1.0           | `#addin "nuget:?package=Cake.Args&version=0.1.0"` |
 | < 0.33.0        | _N/A_           | _(not supported)_                                 |
 
