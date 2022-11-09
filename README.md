@@ -94,9 +94,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="https://augustoproiete.net"><img src="https://avatars.githubusercontent.com/u/177608?v=4?s=100" width="100px;" alt=""/><br /><sub><b>C. Augusto Proiete</b></sub></a><br /><a href="https://github.com/augustoproiete/Cake.Args/commits?author=augustoproiete" title="Code">💻</a> <a href="#maintenance-augustoproiete" title="Maintenance">🚧</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://augustoproiete.net"><img src="https://avatars.githubusercontent.com/u/177608?v=4?s=100" width="100px;" alt="C. Augusto Proiete"/><br /><sub><b>C. Augusto Proiete</b></sub></a><br /><a href="https://github.com/augustoproiete/Cake.Args/commits?author=augustoproiete" title="Code">💻</a> <a href="#maintenance-augustoproiete" title="Maintenance">🚧</a></td>
+      <td align="center"><a href="https://github.com/carlosproiete"><img src="https://avatars.githubusercontent.com/u/33644328?v=4?s=100" width="100px;" alt="Carlos Proiete"/><br /><sub><b>Carlos Proiete</b></sub></a><br /><a href="#maintenance-carlosproiete" title="Maintenance">🚧</a></td>
+    </tr>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->
