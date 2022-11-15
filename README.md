@@ -76,7 +76,7 @@ Cake.Args is compatible with all [Cake runners](https://cakebuild.net/docs/runni
 | Cake runner     | Cake.Args       | Cake addin directive                              |
 |:---------------:|:---------------:| ------------------------------------------------- |
 | 3.0.0 or higher | 3.0.0 or higher | `#addin "nuget:?package=Cake.Args&version=3.0.0"` |
-| 2.0.0           | 2.0.0 - 2.3.0   | `#addin "nuget:?package=Cake.Args&version=2.0.0"` |
+| 2.0.0 - 2.3.0   | 2.0.0           | `#addin "nuget:?package=Cake.Args&version=2.0.0"` |
 | 1.0.0 - 1.3.0   | 1.0.0 - 1.0.1   | `#addin "nuget:?package=Cake.Args&version=1.0.1"` |
 | 0.33.0 - 0.38.5 | 0.1.0           | `#addin "nuget:?package=Cake.Args&version=0.1.0"` |
 | < 0.33.0        | _N/A_           | _(not supported)_                                 |
