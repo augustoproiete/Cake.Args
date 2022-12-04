@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30907.101
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D13A6EB5-6903-49FF-B476-17F2EA5DBB88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Args", "src\Cake.Args\Cake.Args.csproj", "{F8638ADF-F89D-483E-BAB7-A55D681CD37C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cake.Args", "src\Cake.Args\Cake.Args.csproj", "{F8638ADF-F89D-483E-BAB7-A55D681CD37C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{60B737D5-5CA5-4846-A70C-0671A66AB49B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Args.Tests", "test\Cake.Args.Tests\Cake.Args.Tests.csproj", "{FB99D387-DAC9-4882-B3FE-41C3536004EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cake.Args.Tests", "test\Cake.Args.Tests\Cake.Args.Tests.csproj", "{FB99D387-DAC9-4882-B3FE-41C3536004EB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asset", "asset", "{08BEEE09-1E6D-4AA2-815D-5919DCAFCA26}"
 	ProjectSection(SolutionItems) = preProject

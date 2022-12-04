@@ -1,0 +1,11 @@
+namespace Cake.Args
+{
+    [Cake.Core.Annotations.CakeAliasCategory("Args")]
+    [Cake.Core.Annotations.CakeNamespaceImport("Cake.Args")]
+    public static class ArgsAliases
+    {
+        [Cake.Core.Annotations.CakeAliasCategory("Args")]
+        [Cake.Core.Annotations.CakeMethodAlias]
+        public static T ArgumentOrDefault<T>(this Cake.Core.ICakeContext context, string name) { }
+    }
+}
