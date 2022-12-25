@@ -19,53 +19,52 @@ using Cake.Common;
 using Cake.Core;
 using Cake.Core.Annotations;
 
-namespace Cake.Args
+namespace Cake.Args;
+
+/// <summary>
+/// Args aliases
+/// </summary>
+[CakeAliasCategory("Args")]
+[CakeNamespaceImport("Cake.Args")]
+public static class ArgsAliases
 {
     /// <summary>
-    /// Args aliases
+    /// Gets an argument value or default(T) if the argument is missing.
     /// </summary>
+    /// <param name="context">The context.</param>
+    /// <param name="name">The argument name.</param>
+    /// <returns>The value of the argument or the default value of the type of the argument.</returns>
+    /// <example>
+    /// <code>
+    /// <![CDATA[
+    /// var configuration = ArgumentOrDefault<string>("configuration");
+    /// // `configuration` will be `null` if the `configuration` argument is not present
+    ///
+    /// var number = ArgumentOrDefault<int>("number");
+    /// // `number` will be 0 (zero) if the `number` argument is not present
+    ///
+    /// var number = ArgumentOrDefault<int?>("number");
+    /// // `number` will be `null` if the `number` argument is not present (Nullable<int>)
+    ///
+    /// var publish = ArgumentOrDefault<bool>("publish");
+    /// // `publish` will be `false` if the `publish` argument is not present
+    ///
+    /// var publish = ArgumentOrDefault<bool?>("publish");
+    /// // `publish` will be `null` if the `publish` argument is not present (Nullable<bool>)
+    ///
+    /// // ...
+    /// ]]>
+    /// </code>
+    /// </example>
+    [CakeMethodAlias]
     [CakeAliasCategory("Args")]
-    [CakeNamespaceImport("Cake.Args")]
-    public static class ArgsAliases
+    public static T ArgumentOrDefault<T>(this ICakeContext context, string name)
     {
-        /// <summary>
-        /// Gets an argument value or default(T) if the argument is missing.
-        /// </summary>
-        /// <param name="context">The context.</param>
-        /// <param name="name">The argument name.</param>
-        /// <returns>The value of the argument or the default value of the type of the argument.</returns>
-        /// <example>
-        /// <code>
-        /// <![CDATA[
-        /// var configuration = ArgumentOrDefault<string>("configuration");
-        /// // `configuration` will be `null` if the `configuration` argument is not present
-        ///
-        /// var number = ArgumentOrDefault<int>("number");
-        /// // `number` will be 0 (zero) if the `number` argument is not present
-        ///
-        /// var number = ArgumentOrDefault<int?>("number");
-        /// // `number` will be `null` if the `number` argument is not present (Nullable<int>)
-        ///
-        /// var publish = ArgumentOrDefault<bool>("publish");
-        /// // `publish` will be `false` if the `publish` argument is not present
-        ///
-        /// var publish = ArgumentOrDefault<bool?>("publish");
-        /// // `publish` will be `null` if the `publish` argument is not present (Nullable<bool>)
-        ///
-        /// // ...
-        /// ]]>
-        /// </code>
-        /// </example>
-        [CakeMethodAlias]
-        [CakeAliasCategory("Args")]
-        public static T ArgumentOrDefault<T>(this ICakeContext context, string name)
+        if (context is null)
         {
-            if (context is null)
-            {
-                throw new ArgumentNullException(nameof(context));
-            }
-
-            return context.Argument(name, default(T));
+            throw new ArgumentNullException(nameof(context));
         }
+
+        return context.Argument(name, default(T));
     }
 }

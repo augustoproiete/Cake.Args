@@ -21,3 +21,8 @@ end_of_line = lf
 
 [*.verified.txt]
 end_of_line = lf
+
+[*.cs]
+
+# C# formatting settings - Namespace options
+csharp_style_namespace_declarations = file_scoped:warning
